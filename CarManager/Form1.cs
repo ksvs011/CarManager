@@ -16,8 +16,6 @@ namespace CarManager
         public Form1()
         {
             InitializeComponent();
-
-            CurrentTime.ForeColor = Color.White;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -112,48 +110,7 @@ namespace CarManager
 
             }
         }
-
-        private void btnCharge_Click(object sender, EventArgs e)
-        {
-            MoveSidePanel(btnCharge);
-            panelContent.Controls.Clear();
-            try
-            {
-                ChargeForm temp = new ChargeForm();
-
-                temp.TopLevel = false;
-                panelContent.Controls.Add(temp);
-                temp.Show();
-
-            }
-            catch (IndexOutOfRangeException ie)
-            {
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-      
-        private void Logo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void time_Tick(object sender, EventArgs e)
-        {
-           CurrentTime.Text = DateTime.Now.ToString();
-           CurrentTime.Location = new Point(
-           this.ClientSize.Width / 6 - CurrentTime.Width / 2,
-           this.ClientSize.Height / 4 - CurrentTime.Height / 2);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            CurrentTime.Text = DateTime.Now.ToString();
-
-        }
+   
     }
 }
 

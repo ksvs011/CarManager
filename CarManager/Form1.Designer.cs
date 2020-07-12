@@ -32,38 +32,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnCharge = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
-            this.btnParkingInformation = new System.Windows.Forms.Button();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.btnMain = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.time = new System.Windows.Forms.Timer(this.components);
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.CurrentTime = new System.Windows.Forms.Label();
-            this.time = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.btnParkingInformation = new System.Windows.Forms.Button();
+            this.btnMain = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.MenuVertical.Controls.Add(this.btnCharge);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Controls.Add(this.btnExit);
             this.MenuVertical.Controls.Add(this.Logo);
@@ -76,76 +71,6 @@
             this.MenuVertical.Size = new System.Drawing.Size(218, 500);
             this.MenuVertical.TabIndex = 1;
             // 
-            // btnCharge
-            // 
-            this.btnCharge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnCharge.FlatAppearance.BorderSize = 0;
-            this.btnCharge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnCharge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCharge.Font = new System.Drawing.Font("굴림", 15F);
-            this.btnCharge.ForeColor = System.Drawing.Color.White;
-            this.btnCharge.Image = global::CarManager.Properties.Resources.icons8_credit_card_30px_1;
-            this.btnCharge.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCharge.Location = new System.Drawing.Point(5, 312);
-            this.btnCharge.Name = "btnCharge";
-            this.btnCharge.Size = new System.Drawing.Size(213, 108);
-            this.btnCharge.TabIndex = 5;
-            this.btnCharge.Text = "결제";
-            this.btnCharge.UseVisualStyleBackColor = false;
-            this.btnCharge.Click += new System.EventHandler(this.btnCharge_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarManager.Properties.Resources.icons8_settings_32px;
-            this.pictureBox1.Location = new System.Drawing.Point(174, 462);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnExit.Image = global::CarManager.Properties.Resources.icons8_shutdown_30px_1;
-            this.btnExit.Location = new System.Drawing.Point(5, 462);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(30, 30);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnExit.TabIndex = 3;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // Logo
-            // 
-            this.Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(218, 91);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
-            this.Logo.Click += new System.EventHandler(this.Logo_Click);
-            // 
-            // btnParkingInformation
-            // 
-            this.btnParkingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnParkingInformation.FlatAppearance.BorderSize = 0;
-            this.btnParkingInformation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnParkingInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnParkingInformation.Font = new System.Drawing.Font("굴림", 15F);
-            this.btnParkingInformation.ForeColor = System.Drawing.Color.White;
-            this.btnParkingInformation.Image = global::CarManager.Properties.Resources.icons8_garage_32px;
-            this.btnParkingInformation.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnParkingInformation.Location = new System.Drawing.Point(5, 204);
-            this.btnParkingInformation.Name = "btnParkingInformation";
-            this.btnParkingInformation.Size = new System.Drawing.Size(213, 108);
-            this.btnParkingInformation.TabIndex = 1;
-            this.btnParkingInformation.Text = "주차/출차";
-            this.btnParkingInformation.UseVisualStyleBackColor = false;
-            this.btnParkingInformation.Click += new System.EventHandler(this.btnParkingInformation_Click);
-            // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -153,24 +78,6 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(5, 103);
             this.SidePanel.TabIndex = 0;
-            // 
-            // btnMain
-            // 
-            this.btnMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMain.FlatAppearance.BorderSize = 0;
-            this.btnMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMain.Font = new System.Drawing.Font("굴림", 15F);
-            this.btnMain.ForeColor = System.Drawing.Color.White;
-            this.btnMain.Image = global::CarManager.Properties.Resources.icons8_home_24px;
-            this.btnMain.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMain.Location = new System.Drawing.Point(5, 94);
-            this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(213, 103);
-            this.btnMain.TabIndex = 0;
-            this.btnMain.Text = "홈";
-            this.btnMain.UseVisualStyleBackColor = false;
-            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // panel1
             // 
@@ -186,14 +93,17 @@
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panelContent.Controls.Add(this.label1);
-            this.panelContent.Controls.Add(this.CurrentTime);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.panelContent.Location = new System.Drawing.Point(218, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(830, 500);
             this.panelContent.TabIndex = 2;
+            // 
+            // time
+            // 
+            this.time.Enabled = true;
+            this.time.Interval = 1000;
             // 
             // btnRestaurar
             // 
@@ -252,30 +162,74 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // CurrentTime
+            // pictureBox1
             // 
-            this.CurrentTime.AutoSize = true;
-            this.CurrentTime.Location = new System.Drawing.Point(73, 160);
-            this.CurrentTime.Name = "CurrentTime";
-            this.CurrentTime.Size = new System.Drawing.Size(40, 13);
-            this.CurrentTime.TabIndex = 0;
-            this.CurrentTime.Text = "clock";
+            this.pictureBox1.Image = global::CarManager.Properties.Resources.icons8_settings_32px;
+            this.pictureBox1.Location = new System.Drawing.Point(174, 462);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
-            // time
+            // btnExit
             // 
-            this.time.Enabled = true;
-            this.time.Interval = 1000;
-            this.time.Tick += new System.EventHandler(this.time_Tick);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnExit.Image = global::CarManager.Properties.Resources.icons8_shutdown_30px_1;
+            this.btnExit.Location = new System.Drawing.Point(5, 462);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(30, 30);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnExit.TabIndex = 3;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label1
+            // Logo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(218, 91);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
+            // btnParkingInformation
+            // 
+            this.btnParkingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnParkingInformation.FlatAppearance.BorderSize = 0;
+            this.btnParkingInformation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnParkingInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParkingInformation.Font = new System.Drawing.Font("굴림", 15F);
+            this.btnParkingInformation.ForeColor = System.Drawing.Color.White;
+            this.btnParkingInformation.Image = global::CarManager.Properties.Resources.icons8_garage_32px;
+            this.btnParkingInformation.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnParkingInformation.Location = new System.Drawing.Point(5, 204);
+            this.btnParkingInformation.Name = "btnParkingInformation";
+            this.btnParkingInformation.Size = new System.Drawing.Size(213, 108);
+            this.btnParkingInformation.TabIndex = 1;
+            this.btnParkingInformation.Text = "주차/출차";
+            this.btnParkingInformation.UseVisualStyleBackColor = false;
+            this.btnParkingInformation.Click += new System.EventHandler(this.btnParkingInformation_Click);
+            // 
+            // btnMain
+            // 
+            this.btnMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnMain.FlatAppearance.BorderSize = 0;
+            this.btnMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMain.Font = new System.Drawing.Font("굴림", 15F);
+            this.btnMain.ForeColor = System.Drawing.Color.White;
+            this.btnMain.Image = global::CarManager.Properties.Resources.icons8_home_24px;
+            this.btnMain.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMain.Location = new System.Drawing.Point(5, 94);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(213, 103);
+            this.btnMain.TabIndex = 0;
+            this.btnMain.Text = "홈";
+            this.btnMain.UseVisualStyleBackColor = false;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // Form1
             // 
@@ -296,16 +250,14 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panelContent.ResumeLayout(false);
-            this.panelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,10 +277,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCharge;
-        private System.Windows.Forms.Label CurrentTime;
         private System.Windows.Forms.Timer time;
-        private System.Windows.Forms.Label label1;
     }
 }
 
