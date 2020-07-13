@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView_parkingManager = new System.Windows.Forms.DataGridView();
+            this.parkingSpotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driverNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parkingTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parkingCarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listBox_logPrint = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox_parkingSpot_lookUp = new System.Windows.Forms.TextBox();
@@ -50,19 +56,13 @@
             this.timer_DisplayNowtime = new System.Windows.Forms.Timer(this.components);
             this.statusStrip_Now = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_Now = new System.Windows.Forms.ToolStripStatusLabel();
-            this.parkingSpotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.driverNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.parkingTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.parkingCarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_parkingManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingCarBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.statusStrip_Now.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingCarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +99,50 @@
             this.dataGridView_parkingManager.TabIndex = 0;
             this.dataGridView_parkingManager.CurrentCellChanged += new System.EventHandler(this.dataGridView_parkingManager_CurrentCellChanged);
             // 
+            // parkingSpotDataGridViewTextBoxColumn
+            // 
+            this.parkingSpotDataGridViewTextBoxColumn.DataPropertyName = "ParkingSpot";
+            this.parkingSpotDataGridViewTextBoxColumn.HeaderText = "ParkingSpot";
+            this.parkingSpotDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.parkingSpotDataGridViewTextBoxColumn.Name = "parkingSpotDataGridViewTextBoxColumn";
+            this.parkingSpotDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // carNumberDataGridViewTextBoxColumn
+            // 
+            this.carNumberDataGridViewTextBoxColumn.DataPropertyName = "CarNumber";
+            this.carNumberDataGridViewTextBoxColumn.HeaderText = "CarNumber";
+            this.carNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.carNumberDataGridViewTextBoxColumn.Name = "carNumberDataGridViewTextBoxColumn";
+            this.carNumberDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // driverNameDataGridViewTextBoxColumn
+            // 
+            this.driverNameDataGridViewTextBoxColumn.DataPropertyName = "DriverName";
+            this.driverNameDataGridViewTextBoxColumn.HeaderText = "DriverName";
+            this.driverNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.driverNameDataGridViewTextBoxColumn.Name = "driverNameDataGridViewTextBoxColumn";
+            this.driverNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // parkingTimeDataGridViewTextBoxColumn
+            // 
+            this.parkingTimeDataGridViewTextBoxColumn.DataPropertyName = "ParkingTime";
+            this.parkingTimeDataGridViewTextBoxColumn.HeaderText = "ParkingTime";
+            this.parkingTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.parkingTimeDataGridViewTextBoxColumn.Name = "parkingTimeDataGridViewTextBoxColumn";
+            this.parkingTimeDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // parkingCarBindingSource
+            // 
+            this.parkingCarBindingSource.DataSource = typeof(CarManager.ParkingCar);
+            // 
             // listBox_logPrint
             // 
             this.listBox_logPrint.FormattingEnabled = true;
@@ -116,7 +160,7 @@
             this.groupBox2.Controls.Add(this.button_SelectedLookUp);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.groupBox2.Location = new System.Drawing.Point(451, 13);
+            this.groupBox2.Location = new System.Drawing.Point(451, 3);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -291,50 +335,6 @@
             this.toolStripStatusLabel_Now.Name = "toolStripStatusLabel_Now";
             this.toolStripStatusLabel_Now.Size = new System.Drawing.Size(0, 16);
             // 
-            // parkingSpotDataGridViewTextBoxColumn
-            // 
-            this.parkingSpotDataGridViewTextBoxColumn.DataPropertyName = "ParkingSpot";
-            this.parkingSpotDataGridViewTextBoxColumn.HeaderText = "ParkingSpot";
-            this.parkingSpotDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.parkingSpotDataGridViewTextBoxColumn.Name = "parkingSpotDataGridViewTextBoxColumn";
-            this.parkingSpotDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // carNumberDataGridViewTextBoxColumn
-            // 
-            this.carNumberDataGridViewTextBoxColumn.DataPropertyName = "CarNumber";
-            this.carNumberDataGridViewTextBoxColumn.HeaderText = "CarNumber";
-            this.carNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.carNumberDataGridViewTextBoxColumn.Name = "carNumberDataGridViewTextBoxColumn";
-            this.carNumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // driverNameDataGridViewTextBoxColumn
-            // 
-            this.driverNameDataGridViewTextBoxColumn.DataPropertyName = "DriverName";
-            this.driverNameDataGridViewTextBoxColumn.HeaderText = "DriverName";
-            this.driverNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.driverNameDataGridViewTextBoxColumn.Name = "driverNameDataGridViewTextBoxColumn";
-            this.driverNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-            this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // parkingTimeDataGridViewTextBoxColumn
-            // 
-            this.parkingTimeDataGridViewTextBoxColumn.DataPropertyName = "ParkingTime";
-            this.parkingTimeDataGridViewTextBoxColumn.HeaderText = "ParkingTime";
-            this.parkingTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.parkingTimeDataGridViewTextBoxColumn.Name = "parkingTimeDataGridViewTextBoxColumn";
-            this.parkingTimeDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // parkingCarBindingSource
-            // 
-            this.parkingCarBindingSource.DataSource = typeof(CarManager.ParkingCar);
-            // 
             // programBindingSource
             // 
             this.programBindingSource.DataSource = typeof(CarManager.Program);
@@ -356,13 +356,13 @@
             this.Text = "ParkingForm";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_parkingManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingCarBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.statusStrip_Now.ResumeLayout(false);
             this.statusStrip_Now.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingCarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -47,12 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarManager.cs" />
-    <Compile Include="ChargeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChargeForm.Designer.cs">
-      <DependentUpon>ChargeForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +68,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChargeForm.resx">
-      <DependentUpon>ChargeForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +168,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_garage_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\날씨.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\주차가능대수.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\날씨.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\날씨1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\날씨1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
