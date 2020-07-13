@@ -1,0 +1,41 @@
+{
+  "cars": {
+    "car": [
+      {
+        "parkingSpot": 1,
+        "carNumber": "11가1234",
+        "driverName": "김동윤",
+        "phoneNumber": "01041011795",
+        "parkingTime": "2020-07-13T15:11:12.8775003+09:00"
+      },
+      {
+        "parkingSpot": 2,
+        "carNumber": "",
+        "driverName": "",
+        "phoneNumber": "",
+        "parkingTime": "0001-01-01T00:00:00"
+      },
+      {
+        "parkingSpot": 3,
+        "carNumber": "22누2252",
+        "driverName": "이동윤",
+        "phoneNumber": "01022221234",
+        "parkingTime": "2020-07-13T15:11:39.1061999+09:00"
+      },
+      {
+        "parkingSpot": 4,
+        "carNumber": "",
+        "driverName": "",
+        "phoneNumber": "",
+        "parkingTime": "0001-01-01T00:00:00"
+      },
+      {
+        "parkingSpot": 5,
+        "carNumber": "",
+        "driverName": "",
+        "phoneNumber": "",
+        "parkingTime": "0001-01-01T00:00:00"
+      }
+    ]
+  }
+}
