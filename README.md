@@ -28,12 +28,13 @@
 - 공간번호 확인   
 
   + 차량이 있을 때
+  
 <div>   
 <img width="45%" src="https://user-images.githubusercontent.com/60810356/87286844-526bf700-c534-11ea-88b5-820df8f20fdb.PNG">
 <img width="45%" src="https://user-images.githubusercontent.com/60810356/87286845-53048d80-c534-11ea-9073-18e90fe440e5.PNG">
 </div>
 
-  + 차량이 없을 때   
+   + 차량이 없을 때   
   
 <div>   
 <img width="45%" src="https://user-images.githubusercontent.com/60810356/87286847-539d2400-c534-11ea-9ffe-756bdb87444a.PNG">
